@@ -67,7 +67,10 @@ variable_04 = "90"
 variable_05 = 100
 
 # COMPLETAR - INICIO
-
+resultado = 0
+if int(variable_04) > variable_05 or not variable_01 == variable_02:
+    resultado = variable_03
+print(resultado)
 # COMPLETAR - FIN
 
 assert resultado == 80
