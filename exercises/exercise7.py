@@ -6,10 +6,14 @@ A partir de ls siguiente lista instanciar una tupla que contenga todos sus valor
 y en el mismo orden.
 """
 
+from calendar import c
+
+
 lista = ["casa", "perro", "pato", "gato"]
 
 # COMPLETAR - INICIO
-
+tupla = tuple(lista)
+print(tupla)
 # COMPLETAR - FIN
 
 assert tupla == ("casa", "perro", "pato", "gato")
@@ -23,7 +27,8 @@ y en el mismo orden.
 tupla = "casa", "perro", "pato", "gato", "tenedor"
 
 # COMPLETAR - INICIO
-
+lista = list(tupla)
+print(lista)
 # COMPLETAR - FIN
 
 assert lista == ["casa", "perro", "pato", "gato", "tenedor"]
@@ -36,7 +41,8 @@ Desempaquetar la siguiente tupla en las variables a, b y c
 tupla = ("primer", 25, [1, 2, 3])
 
 # COMPLETAR - INICIO
-
+a, b, c = tupla
+print(a, b, c)
 # COMPLETAR - FIN
 
 assert a == "primer" and b == 25 and c == [1, 2, 3]
@@ -49,7 +55,9 @@ Desempaquetar la siguiente tupla y luego sumar sus valores
 tupla = (87, 98, 35, 67, 4, 9)
 
 # COMPLETAR - INICIO
-
+a, b, c, d, e, f = tupla
+suma = a + b + c + d + e + f
+print(suma)
 # COMPLETAR - FIN
 
 assert total == 300
