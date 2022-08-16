@@ -10,7 +10,12 @@ Definir un diccionario para un 'Cliente' que contenga los siguiente valores:
 """
 
 # COMPLETAR - INICIO
-
+diccionario = {"Nombre": "Mario Pedernera",
+                "DNI": 56895632,
+                "Domicilio": 4509,
+                "Compras": ["cafetera", "TV 50 pulgadas", "mouse gamer"]
+              }
+print(diccionario)
 # COMPLETAR - FIN
 
 assert (
@@ -29,7 +34,12 @@ Definir un diccionario para las 'Compras' que contenga los siguiente valores:
 """
 
 # COMPLETAR - INICIO
-
+diccionario = {
+            "Mario Pedernera": ["cafetera", "TV 50 pulgadas", "mouse gamer"],
+            "Ezequiel Castello": ["ipad", "ipod", "iphone"],
+            "Pablo Piristrelli": ["Reproductor de CD", "Videograbadora"]
+}
+print(diccionario)
 # COMPLETAR - FIN
 
 assert (
@@ -41,7 +51,7 @@ assert (
 
 """
 Dado el siguiente diccionario obtener el valor de la "clave1" utilizando el metodo get y
-guardarlo en la variable clave1
+guardarlo en la variable clave1 ####CONSULTAR
 """
 
 diccionario = {
@@ -52,7 +62,7 @@ diccionario = {
 }
 
 # COMPLETAR - INICIO
-
+print(diccionario.get("clave1"))
 # COMPLETAR - FIN
 
 assert clave1 == 234
@@ -61,7 +71,7 @@ assert clave1 == 234
 """
 Dado el siguiente diccionario forzar la obtención de un valor por defecto igual a 5 utilizando
 el metodo get y almacenarlo en la variable clave5
-Restricción: Se debe intentar obtener un valor para la clave inexistente "clave5"
+Restricción: Se debe intentar obtener un valor para la clave inexistente "clave5" ###CONSULTAR
 """
 
 diccionario_2 = {
@@ -90,7 +100,7 @@ diccionario_3 = {
 }
 
 # COMPLETAR - INICIO
-
+print(list(diccionario_3.keys()))
 # COMPLETAR - FIN
 
 assert keys == ["clave1", "clave2", "clave3", "clave4"]
@@ -108,7 +118,7 @@ diccionario_4 = {
 }
 
 # COMPLETAR - INICIO
-
+print(list(diccionario_4.values()))
 # COMPLETAR - FIN
 
 assert values == [1234, 4567, 8910, 1112]
@@ -127,7 +137,7 @@ diccionario_5 = {
 }
 
 # COMPLETAR - INICIO
-
+print(list(diccionario_5.items()))
 # COMPLETAR - FIN
 
 assert items == [(1, 1111), (2, 2222), (3, 3333), (4, 4444)]
@@ -152,7 +162,8 @@ diccionario_7 = {
 }
 
 # COMPLETAR - INICIO
-
+diccionario_6.update(diccionario_7)
+print(diccionario_6)
 # COMPLETAR - FIN
 
 assert diccionario_6 == {1: 1111, 2: 2223, 3: 3334, 4: 4444, 5: 5555, 6: 6666}

@@ -71,7 +71,9 @@ Restricción: Utilizar f-Strings.
 lista = ["esta", "mañana", "sali", "a", "correr"]
 
 # COMPLETAR - INICIO
+a, b, c, d, e = lista
 
+print(f"{a} {b} {c} {d} {e}")
 # COMPLETAR - FIN
 
 assert string_concatenado == "esta mañana sali a correr"
@@ -85,7 +87,9 @@ Restricción: Utilizar desempaquetado con comodines
 tupla = (73, 45, 344, 3434, 2)
 
 # COMPLETAR - INICIO
+a, *_ = tupla
 
+print(a)
 # COMPLETAR - FIN
 
 assert primer == 73
@@ -99,7 +103,9 @@ Restricción: Utilizar desempaquetado con comodines
 lista = [73, 45, 344, 3434, 2]
 
 # COMPLETAR - INICIO
-
+a, *_, b = lista
+suma = a + b
+print(suma)
 # COMPLETAR - FIN
 
 assert suma == 75
@@ -114,7 +120,8 @@ Restricción: Utilizar desempaquetado con comodines y f-Strings
 tupla = ("anoche", "fui", "a", "la", "fiesta", "pero", "no", "pude", "entrar")
 
 # COMPLETAR - INICIO
-
+a, b, c, d, e, *_ = tupla
+print(f"{a} {b} {c} {d} {e}")
 # COMPLETAR - FIN
 
 assert string_concatenado == "anoche fui a la fiesta"

@@ -79,7 +79,10 @@ Restricción: Utilizar el método append junto al indexado simple  ************C
 lista = ["ho", 3.1416, 42, 81, 6, "la"]
 
 # COMPLETAR - INICIO
-
+lista2 = []
+lista2.append(lista[0])
+lista2.append(lista[-1])
+print(lista2)
 # COMPLETAR - FIN
 
 assert lista_primero_y_ultimo == ["ho", "la"]
@@ -107,7 +110,9 @@ Restricción: Utilizar indexado múltiple
 lista = ["ho", 3.1416, "la", 81, 6, 42]
 
 # COMPLETAR - INICIO
-
+lista3 = []
+lista3.append(lista[0:3])
+print(lista3)
 # COMPLETAR - FIN
 
 assert lista_primeros == ["ho", 3.1416, "la"]
@@ -122,7 +127,10 @@ Restricción: Utilizar el método extend junto al indexado múltiple
 lista = ["ho", "la", 81, 6, 42, "como", "estas?"]
 
 # COMPLETAR - INICIO
-
+lista4 = []
+lista4.extend(lista[0:2])
+lista4.extend(lista[5:7])
+print(lista4)
 # COMPLETAR - FIN
 
 assert lista_primeros_y_ultimos == ["ho", "la", "como", "estas?"]
