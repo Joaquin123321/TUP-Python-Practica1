@@ -51,7 +51,7 @@ assert (
 
 """
 Dado el siguiente diccionario obtener el valor de la "clave1" utilizando el metodo get y
-guardarlo en la variable clave1 ####CONSULTAR
+guardarlo en la variable clave1 
 """
 
 diccionario = {
@@ -82,7 +82,7 @@ diccionario_2 = {
 }
 
 # COMPLETAR - INICIO
-
+diccionario_2.get("clave5", 5)
 # COMPLETAR - FIN
 
 assert clave5 == 5
