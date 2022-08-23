@@ -96,7 +96,10 @@ Restricción: Utilizar el método append junto al indexado simple
 lista = ["ho", 3.1416, "la", 81, 6, 42]
 
 # COMPLETAR - INICIO
-
+lista3 = []
+lista3.append(lista[0])
+lista3.append(lista[1])
+lista3.append(lista[2])
 # COMPLETAR - FIN
 
 assert lista_primeros == ["ho", 3.1416, "la"]
