@@ -194,11 +194,7 @@ lista_01 = [1, 2, 3, 4.5, 6, 7]
 lista_02 = [1, 3, 2, 4, 5, 6, 7]
 
 # COMPLETAR - INICIO
-if lista_01 == lista_02:
-    son_iguales = True
-else:
-    son_iguales = False
-print(son_iguales)
+son_iguales = lista_01 == lista_02
 # COMPLETAR - FIN
 
 assert not son_iguales

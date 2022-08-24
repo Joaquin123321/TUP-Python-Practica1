@@ -10,9 +10,7 @@ esta_lloviendo = True
 riego_activado = True
 
 # COMPLETAR - INICIO
-piso_mojado = False
-if esta_lloviendo or riego_activado:
-    piso_mojado == True
+piso_mojado = esta_lloviendo or riego_activado
 # COMPLETAR - FIN
 
 # assert piso_mojado
@@ -28,9 +26,7 @@ lado_cuadrado = 5
 area_cuadrado = pow(lado_cuadrado, 2)
 
 # COMPLETAR - INICIO
-area_mayor_a_cinco = False
-if not area_cuadrado < 5:
-    area_mayor_a_cinco = True
+area_mayor_a_cinco = not area_cuadrado < lado_cuadrado
 # COMPLETAR - FIN
 
 assert area_mayor_a_cinco
@@ -45,10 +41,7 @@ numero_1 = 49
 numero_2 = 50
 
 # COMPLETAR - INICIO
-resultado = False
-if numero_1 % 7 == 0 and numero_2 % 7 != 0:
-    resultado = True
-print(resultado)
+resultado = not numero_1 % 7 and numero_2 % 7
 # COMPLETAR - FIN
 
 assert resultado
@@ -57,7 +50,7 @@ assert resultado
 """
 Construir una expresión lógica que use TODAS las variables y cuyo resultado sea
 el mismo valor de la variable 3.
-Restricción: sólo usar OR, NOT y el mecanismo de cortocircuito.
+Restricción: sólo usar OR, AND y el mecanismo de cortocircuito.
 """
 
 variable_01 = False
@@ -67,10 +60,7 @@ variable_04 = "90"
 variable_05 = 100
 
 # COMPLETAR - INICIO
-resultado = 0
-if int(variable_04) > variable_05 or not variable_01 == variable_02:
-    resultado = variable_03
-print(resultado)
+resultado = variable_03 or variable_02 and variable_01 and variable_04 and variable_05
 # COMPLETAR - FIN
 
 assert resultado == 80
